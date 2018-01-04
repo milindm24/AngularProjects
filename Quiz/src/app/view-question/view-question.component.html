@@ -1,0 +1,22 @@
+<div class="container">
+    <div class='timer'><label>Time left: {{mins}}m{{secs}}s</label></div>
+        <div class='question'>
+    <p> <label> {{ questions.qno }}. {{ questions.Question }}</label></p></div>
+    
+    <div class="div_button">
+                    <input type="button" 
+                    [id]="choice"
+                    *ngFor="let choice of questions.Choices;let i=index"
+                    [class]="current_qno==questions.qno && new_choice == choice ? 'btn btn-success' : 'btn btn-default'"
+                    [name]="choice"  
+                    [value]="choice"
+                    (click)="onClickChoice(questions.qno,choice,questions.Score,i)"
+                    [routerLink]="onClickLast()">
+</div>
+    <br>
+    <button [routerLink]="['/question',questions.qno-1]"  class="btn btn-primary"  *ngIf="questions.qno!=1">Back</button>
+    <button [routerLink]="['/question',questions.qno+1]"  class="btn btn-primary"  *ngIf="questions.qno!=totalQuestions">Next</button>
+    <div class="count">
+       <label>{{ questions.qno }} of {{ totalQuestions }}</label> 
+    </div>
+</div>

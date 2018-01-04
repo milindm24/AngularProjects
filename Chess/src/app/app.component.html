@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8">
+  <div class="row main_row">
+    <div class="col-xs-12 main_col">
+      <div class="row child_row" *ngFor="let rcount of row;let rowcount=index">
+          <div *ngFor="let ccount of column;let colcount=index"
+           [class]="(rcount - colcount)%2 === 0 ? 'col-xs-1 white main_col' : 'col-xs-1 black main_col'" 
+           (click)="piece_count<3 ? onClickBox(rowcount,colcount) : ''" >
+           
+              <app-initialise [rows]="rowcount" [columns]="colcount"
+              [piece_positions] = "piece_positions" 
+              (pieceClicked)="onClickPiece($event)"
+              [checked]="!check" ></app-initialise>
+           
+          </div>
+     </div>
+    </div>
+  </div>
+</div>
+<div class="col-xs-4">
+    <button class="btn btn-success" (click)="onClickRestart()" >New Game</button>
+    <button class="btn btn-success" (click)="onClickRestart()" >Undo Last Move</button>
+</div>
+</div>
+</div>

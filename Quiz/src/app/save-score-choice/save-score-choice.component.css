@@ -1,0 +1,14 @@
+.container{
+     border: 1px solid orange;
+     margin-top: 20px;
+     padding: 20px;
+     padding-bottom: 50px;
+ }
+ 
+ 
+ div {
+     text-align: center;
+     font-size: 150%; 
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
+   }
+ 

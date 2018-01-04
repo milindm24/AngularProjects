@@ -1,0 +1,6 @@
+<div *ngFor="let piece_position of piece_positions; let count = index"
+(click)="onClickPiece(piece_position.rowposition,piece_position.colposition,piece_position.name, piece_position.color, count)" 
+[class]="change_class" >
+    <img *ngIf="(rowposition+1===piece_position.rowposition && colposition+1===piece_position.colposition)"
+    [src]= "piece_position.piece" >
+</div>

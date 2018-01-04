@@ -1,0 +1,47 @@
+button {
+   font-size: 120%;
+   margin-top: 50px;
+   font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
+   
+}
+
+input[type=button]{
+    margin-right: 20px;    
+    font-size: 120%;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  
+}
+
+.div_button{
+    text-align: center;
+
+}
+
+div.timer{
+    text-align: right;
+    font-size: 120%;
+}
+
+
+.container{
+    border: 1px solid orange;
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+ul{
+  font-size: 150%;  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
+  
+}
+
+div.question{
+    text-align: center;
+    font-size: 150%; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
+  }
+
+
+  .count{
+      text-align: right;
+  }

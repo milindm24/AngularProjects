@@ -1,0 +1,40 @@
+.container{
+    margin-top:100px;
+}
+
+.white{
+    background-color: #ffffff;
+    height: 75px;
+    width: 75px;
+
+}
+
+.black{
+    background-color: rgb(32, 231, 5);
+    /* height: 75px;
+    width: 75px; */
+    height: 75px;
+    width: 75px;
+
+}
+
+.main_row{
+    border: 5px solid rgb(255, 196, 0); 
+    display: table;
+}
+
+.child_row{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+.main_col {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 !important;
+   margin: 0 !important;
+   /* height: 100%;
+    width: 100%; */
+}
+
